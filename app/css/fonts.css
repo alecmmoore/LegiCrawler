@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: 'RobotoWeb';
+    src: url('../css/fonts/Roboto-Regular-webfont.eot');
+    src: url('../css/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Roboto-Regular-webfont.woff') format('woff'), url('../css/fonts/Roboto-Regular-webfont.ttf') format('truetype'), url('../css/fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoLightWeb';
+    src: url('../css/fonts/Roboto-Light-webfont.eot');
+    src: url('../css/fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Roboto-Light-webfont.woff') format('woff'), url('../css/fonts/Roboto-Light-webfont.ttf') format('truetype'), url('../css/fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoBoldWeb';
+    src: url('../css/fonts/Roboto-Bold-webfont.eot');
+    src: url('../css/fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Roboto-Bold-webfont.woff') format('woff'), url('../css/fonts/Roboto-Bold-webfont.ttf') format('truetype'), url('../css/fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensedWeb';
+    src: url('../css/fonts/Roboto-Condensed-webfont.eot');
+    src: url('../css/fonts/Roboto-Condensed-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Roboto-Condensed-webfont.woff') format('woff'), url('../css/fonts/Roboto-Condensed-webfont.ttf') format('truetype'), url('../css/fonts/Roboto-Condensed-webfont.svg#robotocondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome rendering fix, only uses svgs */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "townsend-icons-font";
+    url("fonts/townsend-font-1.svg#townsend-icons-font") format("svg");
+    }
+
+    @font-face {
+        font-family: 'RobotoWeb';
+    url('../css/fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    }
+
+    @font-face {
+        font-family: 'RobotoLightWeb';
+    url('../css/fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    }
+
+    @font-face {
+        font-family: 'RobotoBoldWeb';
+    url('../css/fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    }
+
+    @font-face {
+        font-family: 'RobotoCondensedWeb';
+    url('../css/fonts/Roboto-Condensed-webfont.svg#robotocondensed') format('svg');
+    }
+}
