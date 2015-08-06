@@ -217,9 +217,6 @@
 
 </body>
 
-<!-- Twitter Timeline -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -231,6 +228,43 @@
 
 <!-- inject:js -->
 <!-- endinject -->
+
+<!-- Twitter Timeline -->
+<script>
+    //Init twitter feed
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+
+
+    $(document).ready(function() {
+        //debugger;
+        twttr.ready(loadTwitter);
+        function loadTwitter(twttr){
+            twttr.events.bind(
+                    'rendered',
+                    function (event) {
+                        //console.log("Created widget", event.target.id);
+                        $("iframe#twitter-widget-0").contents().find('head').append('<link rel="stylesheet" href="css/fonts.css"><link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/normalize.css">');
+                    }
+            );
+        }
+
+    });
+</script>
 
 
 </html>
