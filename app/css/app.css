@@ -312,8 +312,17 @@ a {
     background-size: cover;
 }
 
-.news .transparency-cover:hover:before {
+.news .transparency-cover:before {
     background-color: rgba(28,44,57,0.25);
+    -webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -ms-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+.news .transparency-cover:hover:before {
+    background-color: rgba(28,44,57,0);
 }
 
 .news img {
