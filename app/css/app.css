@@ -31,6 +31,10 @@ p {
     color: #BABABA;
 }
 
+a {
+    color: #F5546C;
+}
+
 /* Button */
 .button {
     padding: 10px 15px;
@@ -175,8 +179,24 @@ p {
     padding: 25px 0;
 }
 
+.nav li a {
+    color: #ABB3BE;
+    background-color: transparent !important;
+}
+.nav li.active a:hover,
+.nav li.active a {
+    color: #233647;
+    background-color: transparent !important;
+}
+
+.nav button {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
 .navbar-toggle {
     border: 1px solid #223546;
+    margin: 28px 15px;
 }
 
 .navbar-toggle .icon-bar {
@@ -253,14 +273,27 @@ p {
     height: 100%;
 }
 
+.news > div:nth-child(2) a {
+    height: 50%;
+}
+
 .news a {
     display: block;
     border-bottom: 1px solid #2D3755;
 }
 
+.news a:hover {
+    text-decoration: none;
+}
+
 .news .title {
     padding:10px;
     border-top: 1px solid #2D3755;
+}
+
+.news .title h2 {
+    font-size: 20px !important;
+    margin-bottom: 5px;
 }
 
 .news .window {
