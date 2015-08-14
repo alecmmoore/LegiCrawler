@@ -29,10 +29,55 @@ h3 {
 p {
     font-size: 16px !important;
     color: #BABABA;
+    margin-bottom: 0;
+}
+
+p.dark {
+    color:#203346;
 }
 
 a {
     color: #F5546C;
+}
+
+select {
+    padding: 2px 5px;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    background-color: #FFFFFF;
+    border: 1px solid #BBC0C4;
+    width: 18px;
+    height: 18px;
+    outline:0 !important;
+    margin:0;
+}
+
+input[type=checkbox]:checked {
+    background: #FFFFFF url('../img/check-icon-dark.svg') center center no-repeat;
+}
+
+textarea {
+    resize:none;
+    width:100%;
+    min-height: 150px;
+    outline:0;
+}
+
+.ellipse {
+    padding-top: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 1px;
+}
+
+.tag {
+    background-color: #203346;
+    color:#FFFFFF;
+    padding: 2px 5px;
+    margin-left: 5px;
 }
 
 /* Button */
@@ -50,13 +95,38 @@ a {
     background-color: #5F94C5;
 }
 
+.button.button-positive:active {
+    background-color: #5482AD;
+}
+
 .button.button-negative {
     background-color: #F5546C;
+}
+
+.button.button-negative:active {
+    background-color: #D84A5F;
 }
 
 .button a {
     text-decoration: none;
     color:#FFFFFF !important;
+}
+
+.button-check,
+.button-reset {
+    color: transparent;
+    cursor: pointer;
+    width:32px;
+    height:32px;
+    margin-left: 5px;
+}
+
+.button-check {
+    background: url('../img/check-icon.svg') center center no-repeat;
+}
+
+.button-reset {
+    background: url('../img/reset-icon.svg') center center no-repeat;
 }
 /* END Button */
 
@@ -120,21 +190,33 @@ a {
 }
 
 .flex-one {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    min-width: 0;
+    min-height: 0;
 }
 
 .flex-two {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
+    min-width: 0;
+    min-height: 0;
 }
 
 .flex-three {
+    -webkit-box-flex: 3 !important;
+    -moz-box-flex: 3 !important;
     -webkit-flex: 3 !important;
     -ms-flex: 3 !important;
     flex: 3 !important;
+    min-width: 0;
+    min-height: 0;
 }
 
 .flex-initial {
@@ -352,6 +434,10 @@ a {
     background:transparent;
 }
 
+.news-page .twitter-timeline p {
+    color: #181E2D !important;
+}
+
 .timeline-header h1 {
     font-size: 20px !important;
     font-family: 'Roboto', sans-serif, Arial, Verdana, "Trebuchet MS";
@@ -364,4 +450,63 @@ a {
 
 .customisable-border.thm-dark, .thm-dark .customisable-border {
     border-color:#2D3755;
+}
+
+/* List */
+.list .head {
+    border-bottom: 1px solid #BBC0C4;
+    padding-bottom: 10px;
+}
+
+.list .head a,
+.list .head select {
+    margin: 0 10px;
+}
+
+.list .head .input {
+    height: 48px;
+    padding: 15px;
+    margin-right: 10px;
+    background-color: #F2F2F2;
+}
+
+.list .item:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.list .item {
+    border-bottom: 1px solid #BBC0C4;
+    padding: 10px 0;
+}
+
+.list .item img.flag {
+    width: 100px;
+    height: 60px;
+}
+
+.list .item .title {
+    margin: 0 25px;
+}
+
+.list .item input[type=checkbox] {
+    margin: 15px;
+}
+
+.list .item .history {
+    margin-left: 10px;
+    padding: 20px 15px;
+    border-left: 1px solid #BBC0C4;
+}
+
+.list .item.new img {
+    width: 245px;
+    height: 160px;
+    margin: 0 10px;
+}
+
+.list .item.new p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
