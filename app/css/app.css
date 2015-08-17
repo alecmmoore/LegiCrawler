@@ -48,6 +48,7 @@ input[type=checkbox] {
     -webkit-appearance: none;
     background-color: #FFFFFF;
     border: 1px solid #BBC0C4;
+    min-width: 18px;
     width: 18px;
     height: 18px;
     outline:0 !important;
@@ -292,6 +293,16 @@ textarea {
 .navbar-toggle .icon-bar {
     background-color: #223546;
 }
+
+.sub-header {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #203346;
+}
+
+.sub-header h1 {
+    color: #FFFFFF;
+}
 /* END Nav */
 
 /* Hero */
@@ -458,7 +469,12 @@ textarea {
     padding-bottom: 10px;
 }
 
-.list .head a,
+.list .head a {
+    cursor: pointer;
+    color: #ABB3BE;
+    margin: 0 10px;
+}
+
 .list .head select {
     margin: 0 10px;
 }
@@ -509,4 +525,16 @@ textarea {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+.list .item.new h3 {
+    padding: 5px 0;
+}
+
+
+@media (max-width:692px) {
+    .nav-pills > li {
+        width: 100%;
+        margin-bottom:10px;
+    }
 }
