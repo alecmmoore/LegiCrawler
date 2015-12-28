@@ -220,24 +220,18 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="./img/recommendation-01.png"/>
-                    <br/>
                     <br/>
                     <h2>Karen Ryan</h2>
                     <h3>Senior Director, Government and Community Affairs, Convergys</h3>
                     <p>LegiCrawler is a valued partner for our company.  The team is responsive to customer needs and goes  the extra mile to ensure the issues important to our company are a priority.  The alerts we receive are relevant and comprehensive.  Their growing analytics feature has added a level of sophistication to their work that we use to inform and educate our internal business partners on a regular basis.</p>
                 </div>
                 <div class="col-sm-4">
-                    <img src="./img/recommendation-02.png"/>
                     <br/>
-                    <br/>
-                    <h2>Lewis McMurran</h2>
-                    <h3>President, McMurran Enterprises</h3>
-                    <p>As former Vice President for Government and External Affairs for the Washington Technology Industry Association, I have seen LegiCrawler consistently in the vanguard of developments in public poliy tracking.  I am extemely impressed with LegiCrawler’s service ethic, its cutting-edge analytics and  vision for the future.</p>
+                    <h2>Karen Worstell</h2>
+                    <h3>Founder, W Risk Group and former CISO, Microsoft Corporation</h3>
+                    <p>LegiCrawler's tailored services provide an invaluable resource for quickly tracking important legislation that impacts corporations for whom compliance with data protection and data privacy statutes and regulations are essential. The time saved by getting LegiCrawler updates easily justifies the subscription. I cannot imagine a national or multi-national corporation effectively managing their legislative/governmental affairs without it.</p>
                 </div>
                 <div class="col-sm-4">
-                    <img src="./img/recommendation-03.png"/>
-                    <br/>
                     <br/>
                     <h2>David Baker</h2>
                     <h3>Executive Director and General Counsel, Plastic Shipping Container Institute</h3>
@@ -302,7 +296,7 @@
                     'rendered',
                     function (event) {
                         //console.log("Created widget", event.target.id);
-                        $("iframe#twitter-widget-0").contents().find('head').append('<link rel="stylesheet" href="css/fonts.css"><link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/normalize.css">');
+                        $("iframe.twitter-timeline").contents().find('head').append('<link rel="stylesheet" href="css/fonts.css"><link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/normalize.css">');
                     }
             );
         }
