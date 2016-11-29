@@ -26,8 +26,14 @@ h3 {
     color: #5F94C5;
 }
 
+h4 {
+    font-size: 19px !important;
+    font-family: 'RobotoBoldWeb', sans-serif, Arial, Verdana, "Trebuchet MS";
+    color: black;
+}
+
 p {
-    font-size: 16px !important;
+    font-size: 15px !important;
     color: #BABABA;
     margin-bottom: 0;
 }
@@ -79,6 +85,11 @@ textarea {
     color:#FFFFFF;
     padding: 2px 5px;
     margin-left: 5px;
+}
+
+.note-tag {
+    background-color: #000;
+    height: 35px;
 }
 
 /* Button */
