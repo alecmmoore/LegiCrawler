@@ -32,6 +32,11 @@ h4 {
     color: black;
 }
 
+h5 {
+    font-size: 17px;
+    font-family: 'RobotoWeb', sans-serif, Arial, Verdana, "Trebuchet MS";
+}
+
 p {
     font-size: 15px !important;
     color: #BABABA;
@@ -72,7 +77,7 @@ textarea {
     outline:0;
 }
 
-.ellipse {
+.ellipse { 
     padding-top: 1px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -90,6 +95,53 @@ textarea {
 .note-tag {
     background-color: #000;
     height: 35px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.chapter-title h4 {
+    margin-bottom: 25px;
+}
+
+.copypright {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.version-list ul {
+    padding: 0px;
+}
+
+.version-list li {
+    list-style-type: none;
+    border: solid 1px #C5C5C5;
+    color: #F5546C;
+    background-color: #fff;
+}
+
+.version-list li:active {
+    background-color: #5F94C5;
+    color: #fff;
+}
+
+.sidebar {
+    background-color: #EEF1F5;
+    border: solid 1px #ABB3BE;
+    margin-bottom: 20px;
+}
+
+.sidebar-section {
+    border-bottom: solid 1px #ABB3BE;
+    padding: 15px;
+}
+
+.sidebar-section::last-child {
+    border-bottom: none;
+}
+
+.sidebar-section h4, .sidebar-section h5 {
+    margin: 0;
 }
 
 /* Button */
@@ -139,6 +191,16 @@ textarea {
 
 .button-reset {
     background: url('../img/reset-icon.svg') center center no-repeat;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #F5546C;
+}
+
+.btn-secondary {
+    background-color: #F5546C;
+    color: #fff;
 }
 /* END Button */
 
