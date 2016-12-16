@@ -103,10 +103,11 @@ textarea {
     margin-bottom: 25px;
 }
 
-.copypright {
+.copypright  {
     font-size: 13px;
     text-align: center;
     margin-bottom: 25px;
+    color: #000;
 }
 
 .version-list ul {
@@ -120,7 +121,9 @@ textarea {
     background-color: #fff;
 }
 
-.version-list li:active {
+.version-list li:active,
+.list-day-select:active,
+.pagination li:active {
     background-color: #5F94C5;
     color: #fff;
 }
@@ -129,6 +132,10 @@ textarea {
     background-color: #EEF1F5;
     border: solid 1px #ABB3BE;
     margin-bottom: 20px;
+}
+
+.sidebar col-xs-6 {
+    padding: 0px;
 }
 
 .sidebar-section {
@@ -140,9 +147,29 @@ textarea {
     border-bottom: none;
 }
 
-.sidebar-section h4, .sidebar-section h5 {
+.sidebar-section h5   {
     margin: 0;
 }
+
+.sidebar-section h4 {
+    margin-bottom: 5px;
+}
+
+.list-day-select-container {
+    list-style: none;
+    display: flex;
+}
+
+.list-day-select {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+
+.inbox-item div {
+    float: left;
+}
+ 
 
 /* Button */
 .button {
