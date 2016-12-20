@@ -10,6 +10,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 34px !important;
+    color: #233647;
 }
 
 h1 span {
@@ -97,6 +98,16 @@ textarea {
     height: 35px;
     color: #fff;
     font-size: 16px;
+    padding: 10px;
+    display: flex;
+
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .chapter-title h4 {
@@ -119,6 +130,7 @@ textarea {
     border: solid 1px #C5C5C5;
     color: #F5546C;
     background-color: #fff;
+    padding: 5px 0;
 }
 
 .version-list li:active,
@@ -177,7 +189,7 @@ textarea {
     border-radius: 0;
 }
  
-.inbox-filter div *:not(li), .inbox-nav div *:not(input) {
+.inbox-filter div *:not(li), .inbox-nav div *:not(input, label) {
     height: 35px;
     padding: 0 10px;
 } 
@@ -230,6 +242,31 @@ textarea {
 .link-tag:first-child {
     border: none;
     padding: 0 5px 0 0;
+}
+
+.bill-code {
+    margin: 15px 0;
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.note-tag-title div {
+    float: left;
+}
+
+.note-tag-title {
+    height: 45px;
+}
+
+.abs-right {
+    position: absolute;
+    right: 30px;
 }
 
 /* Button */
