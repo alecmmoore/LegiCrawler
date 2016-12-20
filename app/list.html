@@ -94,83 +94,97 @@
     </nav>
 
 
-    <div class="container-fluid hero dark">
-        <div class="container">
-            <div class="col-xs-8 flex">
+    <div class="container-fluid hero dark small-hero">
+        <div class="container inbox-filter">
+
+            <div class="col-xs-8 flex flex-center-vertical">
                 <select>
                     <option>Legislative Inbox</option>
                 </select>
-                <ul class="list-day-select-container">
-                    <li><button class="list-day-select">Today</button></li>
+                <ul class="list-day-select-container no-margin">
+                    <li><button class="list-day-select first-child">Today</button></li>
                     <li><button class="list-day-select">This Week</button></li>
                     <li><button class="list-day-select">Enacted</button></li>
-                    <li><button class="list-day-select">After</button></li>
+                    <li><button class="list-day-select last-child">After</button></li>
                 </ul>
-                <input />
+                <input class="date-input" placeholder="dd/mm/yyyy"/>
                 <select>
                     <option>All States</option>
                 </select>
-                <button class="btn-secondary"><img src="./img/check-icon.svg"/></button>
-                <button class="btn-secondary"><img src="./img/reset-icon.svg"/></button>
+                <button class="btn-secondary button-check"></button>
+                <button class="btn-secondary button-reset"></button>
             </div>
-            <div class="col-xs-3 flex">
+
+            <div class="col-xs-3 flex flex-center-vertical">
                 <button class="button btn btn-primary">Legislative Map</button>
                 <button class="button btn btn-secondary">Hot Bills</button>
             </div>
         </div>
     </div>
+
+
     
-    <div>
-        
-        <h5>Select Label:</h5>
-        <select>
-            <option>Priority</option>
-        </select>
-
-    </div>
-
-    <div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"><h5>Show Notes</h5>
-            </label>
-        </div>
-        <ul class="pagination">
-            <li><a href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-            </li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li>
-            <a href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-            </li>
-        </ul>
-    </div>
-
-    <br/>
 
     <div class="container">
-        <div class="inbox-item">
-            <div class="checkbox">
+
+        <div class="inbox-nav">
+            <div class="col-xs-6 flex flex-center-vertical">
+                
+                <h5>Select Label:</h5>
+                <select>
+                    <option>Priority</option>
+                </select>
+                <button class="btn-secondary button-check"></button>
+            </div>
+
+            <div class="col-xs-6 flex flex-center-vertical flex-right">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"><h5 class="no-margin">Show Notes</h5>
+                    </label>
+                </div>
+                <ul class="pagination no-margin">
+                    <li><a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="inbox-item flex flex-center-vertical">
+            <div class="checkbox no-margin">
                 <label>
                     <input type="checkbox">
                 </label>
             </div>
             <div>
                 <img src="./img/wa-flag.jpg"/>
+            </div>
+            <div class="inbox-title">
                 <h2>WAHB05062</h2>
                 <h3>Aug 2nd</h3>
             </div>
-            <div>
-                <h5>Gonzalez | An act to amend Section 4735 of the Civil Code, Relating to common interest developments, a…<h5>
+            <div class="inbox-text">
+                <h5 class="no-margin">Gonzalez | An act to amend Section 4735 of the Civil Code, Relating to common interest developments, a…</h5>
                 <p>Chaptered by Secretary of State - Chapter 266, Statutes of 2015. COMM. LOCATION : SEN JUDICIARY TITLE<p>
-                <div><a>Introduced</a><a>Amended</a><a>Enrolled</a><a>Enacted</a></div><div>NOTE TAG</div> 
+                <div>
+                    <a class="link-tag">Introduced</a>
+                    <a class="link-tag">Amended</a>
+                    <a class="link-tag">Enrolled</a>
+                    <a class="link-tag">Enacted</a>
+                </div>
+                <div>NOTE TAG</div> 
             </div>
-            <div>
+            <div class="history">
                 <a>History</a>
             </div>
         </div>
