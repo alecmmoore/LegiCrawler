@@ -177,10 +177,10 @@
                 <h5 class="no-margin">Gonzalez | An act to amend Section 4735 of the Civil Code, Relating to common interest developments, a…</h5>
                 <p>Chaptered by Secretary of State - Chapter 266, Statutes of 2015. COMM. LOCATION : SEN JUDICIARY TITLE<p>
                 <div>
-                    <a class="link-tag">Introduced</a>
-                    <a class="link-tag">Amended</a>
-                    <a class="link-tag">Enrolled</a>
-                    <a class="link-tag">Enacted</a>
+                    <a class="link link-tag">Introduced</a>
+                    <a class="link link-tag">Amended</a>
+                    <a class="link link-tag">Enrolled</a>
+                    <a class="link link-tag">Enacted</a>
                 </div>
                 <div>NOTE TAG</div> 
             </div>
@@ -196,25 +196,32 @@
     <div id="noteModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content modal-background">
-                <div class="modal-header">
-                    <div class="col-md-11 ">
+                <div class="modal-header flex flex-center-vertical">
+                    <div class="col-xs-11 no-padding-left flex flex-align-bottom">
                         <h1>Notes</h1>
-                        <h2>WAHB05062, WAHB0324, CAAB00761</h2>
+                        <h2 class="note-label">WAHB05062, WAHB0324, CAAB00761</h2>
                     </div>
-                    <div class="col-md-1">
-                    <img src="./img/cancel-icon.png"/>
+                    <div class="col-xs-1 flex flex-right no-padding-left">
+                        <img src="./img/cancel-icon.png"/>
                     </div>
                 </div>
                 <div class="modal-body">
-                    <textarea></textarea>
-                    <div class="">
-                        <div class="col-md-2 text-left">
-                            <button class="btn-secondary" type="button">Save</button>
+                    <div class="flex flex-center-vertical margin-bottom">
+                        <h5>Label:</h5>
+                        <select class="margin-left">
+                            <option>None</option>
+                        </select>
+                    </div>
+                    <textarea class="note-model-textarea margin-bottom"></textarea>
+                    <div class="textarea-grad"></div>
+                    <div class="flex flex-center-vertical">
+                        <div class="col-xs-3 no-padding-left">
+                            <button class="button btn save-button flex flex-center-horizontal flex-center-vertical" type="button">Save</button>
                         </div>
-                        <div class="col-md-2 text-left">
-                            <button class="cancel-button" type="button">Cancel</button>
+                        <div class="col-xs-3">
+                            <button class="button btn cancel-button flex flex-center-horizontal flex-center-vertical" type="button">Cancel</button>
                         </div>
-                        <div class="col-md-8 text-right">
+                        <div class="col-xs-6 flex flex-right">
                             <a class="link" type="button">Delete</a>
                         </div>
                     </div>
