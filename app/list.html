@@ -97,13 +97,13 @@
     <div class="container-fluid hero dark small-hero">
         <div class="container inbox-filter">
 
-            <div class="col-xs-8 flex flex-center-vertical">
+            <div class="col-xs-8 flex flex-center-vertical no-padding">
                 <select>
                     <option>Legislative Inbox</option>
                 </select>
-                <ul class="list-day-select-container no-margin">
+                <ul class="list-day-select-container no-padding-left no-margin">
                     <li><button class="list-day-select first-child">Today</button></li>
-                    <li><button class="list-day-select">This Week</button></li>
+                    <li><button class="list-day-select" style="width:90px;">This Week</button></li>
                     <li><button class="list-day-select">Enacted</button></li>
                     <li><button class="list-day-select last-child">After</button></li>
                 </ul>
@@ -111,13 +111,13 @@
                 <select>
                     <option>All States</option>
                 </select>
-                <button class="btn-secondary button-check"></button>
-                <button class="btn-secondary button-reset"></button>
+                <button class="btn-secondary button button-negative button-check"></button>
+                <button class="btn-secondary button button-negative button-reset"></button>
             </div>
 
-            <div class="col-xs-3 flex flex-center-vertical">
-                <button class="button btn btn-primary">Legislative Map</button>
-                <button class="button btn btn-secondary">Hot Bills</button>
+            <div class="col-xs-4 flex no-padding flex-right flex-center-vertical">
+                <button class="button btn btn-primary margin-right">Legislative Map</button>
+                <button class="button btn btn-secondary button-negative">Hot Bills</button>
             </div>
         </div>
     </div>
@@ -134,7 +134,7 @@
                 <select>
                     <option>Priority</option>
                 </select>
-                <button class="btn-secondary button-check"></button>
+                <button class="btn-secondary button button-negative button-check"></button>
             </div>
 
             <div class="col-xs-6 flex flex-center-vertical flex-right">
@@ -182,10 +182,29 @@
                     <a class="link link-tag">Enrolled</a>
                     <a class="link link-tag">Enacted</a>
                 </div>
-                <div>NOTE TAG</div> 
             </div>
             <div class="history">
                 <a>History</a>
+            </div>
+        </div>
+
+        <div class="note-item-container">
+            <div class="note-item flex flex-center-vertical">
+                <div class="checkbox no-margin">
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="inbox-title">
+                    <h5>Patrick Adrian</h5>
+                    <h3>Aug 2nd</h3>
+                </div>
+                <div>
+                    <div class="note-tag">Healthcare</div>
+                </div>
+                <div>
+                    <p>Proposed law prohibiting condo Boards from prohibiting members from following drought regulations or installing water conservation landscapes.</p>
+                </div>
             </div>
         </div>
         
@@ -202,7 +221,7 @@
                         <h2 class="note-label">WAHB05062, WAHB0324, CAAB00761</h2>
                     </div>
                     <div class="col-xs-1 flex flex-right no-padding-left">
-                        <img src="./img/cancel-icon.png"/>
+                        <button type="button" class="close-icon-button" data-dismiss="modal"><img src="./img/cancel-icon.png"/></button>
                     </div>
                 </div>
                 <div class="modal-body">
@@ -219,7 +238,7 @@
                             <button class="button btn save-button flex flex-center-horizontal flex-center-vertical" type="button">Save</button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="button btn cancel-button flex flex-center-horizontal flex-center-vertical" type="button">Cancel</button>
+                            <button class="button btn cancel-button flex flex-center-horizontal flex-center-vertical" type="button" data-dismiss="modal">Cancel</button>
                         </div>
                         <div class="col-xs-6 flex flex-right">
                             <a class="link" type="button">Delete</a>
