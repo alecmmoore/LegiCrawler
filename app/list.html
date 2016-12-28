@@ -97,7 +97,7 @@
     <div class="container">
 
         <div class="inbox-nav">
-            <div class="col-xs-6 flex flex-center-vertical">
+            <div class="col-xs-6 flex flex-center-vertical width-padding">
                 <select>
                     <option><div class="checkbox"><input type="checkbox" /></option>
                 </select>
@@ -105,20 +105,19 @@
                     <option>Action(0)</option>
                     <option>Note</option>
                 </select>
-                <h5>Select Label:</h5>
+                <h5 class="flex flex-center-vertical">Select Label:</h5>
                 <select>
                     <option>Priority</option>
                 </select>
                 <button class="btn-secondary button button-negative button-check"></button>
             </div>
 
-            <div class="col-xs-6 flex flex-center-vertical flex-right">
+            <div class="col-xs-6 flex flex-center-vertical flex-right width-padding">
                 <div class="checkbox">
-                    <label>
-                        <input type="checkbox"><h5 class="no-margin">Show Notes</h5>
-                    </label>
+                    <input type="checkbox">
                 </div>
-                <ul class="pagination no-margin">
+                <h5 class="flex flex-center-vertical">Show Notes</h5>
+                <ul class="pagination">
                     <li><a href="#" aria-label="Previous">
                         <span class="glyphicon glyphicon-triangle-left"></span>
                     </a>
@@ -135,51 +134,56 @@
             </div>
         </div>
 
-        <div class="inbox-item flex flex-center-vertical">
-            <div class="checkbox no-margin">
-                <label>
-                    <input type="checkbox">
-                </label>
-            </div>
-            <div>
-                <img src="./img/wa-flag.jpg"/>
-            </div>
-            <div class="inbox-title">
-                <h2>WAHB05062</h2>
-                <h3>Aug 2nd</h3>
-            </div>
-            <div>
-                <h5 class="no-margin">Gonzalez | An act to amend Section 4735 of the Civil Code, Relating to common interest developments, a…</h5>
-                <p>Chaptered by Secretary of State - Chapter 266, Statutes of 2015. COMM. LOCATION : SEN JUDICIARY TITLE<p>
+        <div class="inbox-item flex flex-center-vertical width-padding">
+            <div class="col-sm-4 flex flex-center-vertical no-padding">
+                <div class="checkbox no-margin">
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                </div>
                 <div>
-                    <a class="link link-tag">Introduced</a>
-                    <a class="link link-tag">Amended</a>
-                    <a class="link link-tag">Enrolled</a>
-                    <a class="link link-tag">Enacted</a>
+                    <img src="./img/wa-flag.jpg"/>
+                </div>
+                <div class="inbox-title">
+                    <h2>WAHB05062</h2>
+                    <h3>Aug 2nd</h3>
                 </div>
             </div>
-            <div class="history">
-                <a>History</a>
+            <div class="col-sm-8 flex flex-center-vertical no-padding-left">
+                <div class="truncate">
+                    <h5 class="no-margin">Gonzalez | An act to amend Section 4735 of the Civil Code, Relating to common interest developments, a…</h5>
+                    <p>Chaptered by Secretary of State - Chapter 266, Statutes of 2015. COMM. LOCATION : SEN JUDICIARY TITLE<p>
+                    <div>
+                        <a class="link link-tag">Introduced</a>
+                        <a class="link link-tag">Amended</a>
+                        <a class="link link-tag">Enrolled</a>
+                        <a class="link link-tag">Enacted</a>
+                    </div>
+                </div>
+                <div class="history">
+                    <a>History</a>
+                </div>
             </div>
         </div>
 
-        <div class="note-item-container">
+        <div class="note-item-container width-padding">
             <div class="note-item flex flex-center-vertical">
-                <div class="col-sm-3 flex flex-center-vertical">
+                <div class="col-sm-4 flex flex-center-vertical">
+                    <div class="col-sm-1 margin-right"></div>
                     <div class="checkbox no-margin">
                         <label>
                             <input type="checkbox">
                         </label>
                     </div>
                     <div class="inbox-title">
-                        <h5>Patrick Adrian</h5>
+                        <h5 class="no-margin">Patrick Adrian</h5>
                         <h3>Aug 2nd</h3>
                     </div>
                     <div>
                         <div class="note-tag">Healthcare</div>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 no-padding-left">
                     <p>Proposed law prohibiting condo Boards from prohibiting members from following drought regulations or installing water conservation landscapes.</p>
                 </div>
             </div>

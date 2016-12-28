@@ -193,11 +193,14 @@ input, select {
     border-radius: 0;
 }
  
-/*.inbox-filter div:first-child,
-.inbox-nav div:first-child {
+.inbox-nav div *:not(a) {
     height: 35px;
     margin: 0 5px;
-} */
+}
+
+.inbox-nav div input {
+    height: 18px;
+} 
 
 .date-input {
     border-radius: 7px;
@@ -233,10 +236,6 @@ input, select {
 
 .inbox-item div.checkbox {
     padding: 0 15px;
-}
-
-.inbox-nav {
-    padding: 20px 0;
 }
 
 .inbox-text {
@@ -351,6 +350,21 @@ input, select {
     color: #fff;
     background-color: #5F94C5;
     border-color: #5F94C5;
+}
+
+.pagination li span {
+    height: 14px;
+    margin: 0;
+}
+
+.width-padding {
+    padding: 10px 0;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Button */
