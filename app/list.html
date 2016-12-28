@@ -21,72 +21,35 @@
 <body class="news-page">
  
     <nav class="navbar navbar-pills">
-        <div class="container">
+        <div class="container flex flex-center-vertical">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/">
-                    <img src="img/logo-dark.svg"/>
+                <a class="flex flex-center-vertical" href="/">
+                    <img class="no-padding margin-right" src="img/nav-crest.png" height="80px" width="80px"/>
+                    <div>
+                        <h3>U.S. Department of Labor Administrative Page</h3>
+                        <p>Office of Unemployment Insurance</p>
+                    </div>
                 </a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse flex flex-right" id="myNavbar">
                 <ul class="nav nav-pills navbar-right">
                     <li role="presentation">
-                        <a href="http://www.legicrawler.com/htdocs/aboutus.html">About</a>
+                        <a href="http://www.legicrawler.com/htdocs/aboutus.html">Legislative Reports</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.legicrawler.com/news/news-index.html">News</a>
+                        <a href="http://www.legicrawler.com/news/news-index.html">Regulatory Notice</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="">Bill Lookup</a>
                     </li>
                     <li role="presentation" class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Sessions <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/htdocs/2013sessions.html">2013</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/htdocs/2014sessions.html">2014</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/htdocs/2015sessions.html">2015</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li role="presentation" class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Product <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/cgi-bin/hm?listcsolx51=Legislative&c=a&y=15&m=01&d=01&s=51&page=1">Hot Bills</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/gs2015/WA/WASB06145.html">View a Bill</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/cgi-bin/gm?listcsolx51=Legislative&c=a&y=15&m=01&d=01&s=51&page=1">Legislation Map View</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/cgi-bin/getajax?name=csol&state=51&list=Legislative">Tracking List</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="http://www.legicrawler.com/cgi-bin/al?listcsolx51=Legislative&c=a&y=15&m=01&d=01&s=51&page=1">Tracking List (Editable)</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <button class="button button-positive">
-                            <a href="http://www.legicrawler.com/htdocs/ID.html">Log in</a>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button button-negative">
-                            <a href="mailto:bkrantz@legicrawler.com?subject=Demo%20Request">Demo</a>
-                        </button>
+                        <input type="text" class="form-control search-box" placeholder="Key Word">
+                        <img class="search-icon" src="./img/search-icon.png" />
                     </li>
                 </ul>
             </div>
@@ -96,23 +59,29 @@
 
     <div class="container-fluid hero dark small-hero">
         <div class="container inbox-filter">
-
-            <div class="col-xs-8 flex flex-center-vertical no-padding">
-                <select>
-                    <option>Legislative Inbox</option>
-                </select>
-                <ul class="list-day-select-container no-padding-left no-margin">
-                    <li><button class="list-day-select first-child">Today</button></li>
-                    <li><button class="list-day-select" style="width:90px;">This Week</button></li>
-                    <li><button class="list-day-select">Enacted</button></li>
-                    <li><button class="list-day-select last-child">After</button></li>
-                </ul>
-                <input class="date-input" placeholder="dd/mm/yyyy"/>
-                <select>
-                    <option>All States</option>
-                </select>
-                <button class="btn-secondary button button-negative button-check"></button>
-                <button class="btn-secondary button button-negative button-reset"></button>
+            <div class="col-xs-8 no-padding">
+                <div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myFilter">
+                        <span class="glyphicon glyphicon-filter"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myFilter">
+                    <select>
+                        <option>Legislative Inbox</option>
+                    </select>
+                    <ul class="list-day-select-container no-padding-left no-margin">
+                        <li><button class="list-day-select first-child">Today</button></li>
+                        <li><button class="list-day-select" style="width:90px;">This Week</button></li>
+                        <li><button class="list-day-select">Enacted</button></li>
+                        <li><button class="list-day-select last-child">After</button></li>
+                    </ul>
+                    <input class="date-input" placeholder="dd/mm/yyyy"/>
+                    <select>
+                        <option>All States</option>
+                    </select>
+                    <button class="btn-secondary button button-negative button-check"></button>
+                    <button class="btn-secondary button button-negative button-reset"></button>
+                </div>
             </div>
 
             <div class="col-xs-4 flex no-padding flex-right flex-center-vertical">
@@ -129,7 +98,13 @@
 
         <div class="inbox-nav">
             <div class="col-xs-6 flex flex-center-vertical">
-                
+                <select>
+                    <option><div class="checkbox"><input type="checkbox" /></option>
+                </select>
+                <select>
+                    <option>Action(0)</option>
+                    <option>Note</option>
+                </select>
                 <h5>Select Label:</h5>
                 <select>
                     <option>Priority</option>
@@ -145,7 +120,7 @@
                 </div>
                 <ul class="pagination no-margin">
                     <li><a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
+                        <span class="glyphicon glyphicon-triangle-left"></span>
                     </a>
                     </li>
                     <li><a href="#">1</a></li>
@@ -153,7 +128,7 @@
                     <li><a href="#">3</a></li>
                     <li>
                     <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
+                        <span class="glyphicon glyphicon-triangle-right"></span>
                     </a>
                     </li>
                 </ul>
@@ -190,19 +165,21 @@
 
         <div class="note-item-container">
             <div class="note-item flex flex-center-vertical">
-                <div class="checkbox no-margin">
-                    <label>
-                        <input type="checkbox">
-                    </label>
+                <div class="col-sm-3 flex flex-center-vertical">
+                    <div class="checkbox no-margin">
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <div class="inbox-title">
+                        <h5>Patrick Adrian</h5>
+                        <h3>Aug 2nd</h3>
+                    </div>
+                    <div>
+                        <div class="note-tag">Healthcare</div>
+                    </div>
                 </div>
-                <div class="inbox-title">
-                    <h5>Patrick Adrian</h5>
-                    <h3>Aug 2nd</h3>
-                </div>
-                <div>
-                    <div class="note-tag">Healthcare</div>
-                </div>
-                <div>
+                <div class="col-sm-8">
                     <p>Proposed law prohibiting condo Boards from prohibiting members from following drought regulations or installing water conservation landscapes.</p>
                 </div>
             </div>

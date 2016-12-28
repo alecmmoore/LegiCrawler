@@ -164,7 +164,7 @@ input, select {
 }
 
 .sidebar-section h5, .no-margin {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .sidebar-section h4 {
@@ -193,10 +193,11 @@ input, select {
     border-radius: 0;
 }
  
-.inbox-filter div *:not(li), .inbox-nav div *:not(input, label) {
+/*.inbox-filter div:first-child,
+.inbox-nav div:first-child {
     height: 35px;
-    margin: 0 10px;
-} 
+    margin: 0 5px;
+} */
 
 .date-input {
     border-radius: 7px;
@@ -211,7 +212,6 @@ input, select {
 }
 
 .note-item {
-    margin-left: 50px;
     border-top: #BBC0C4 1px solid;
 }
 
@@ -277,7 +277,7 @@ input, select {
 }
 
 .no-padding {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .note-tag-title div,
@@ -338,6 +338,21 @@ input, select {
 .margin-bottom {
     margin-bottom: 10px;
 }
+
+.pagination li a {
+    color: #000;
+}
+
+.pagination li a:hover {
+    color: #000;
+}
+
+.pagination li a:active {
+    color: #fff;
+    background-color: #5F94C5;
+    border-color: #5F94C5;
+}
+
 /* Button */
 .button  {
     padding: 10px 15px;
@@ -610,6 +625,25 @@ input, select {
 
 .sub-header h1 {
     color: #FFFFFF;
+}
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+}
+
+.search-box {
+    border-radius: 7px;
+}
+
+.navbar img.search-icon {
+    padding: 0;
+}
+
+.nav li a:active {
+    color: #000;
+    font-weight: bold;
 }
 /* END Nav */
 
