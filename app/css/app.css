@@ -211,6 +211,9 @@ input, select {
 .inbox-item {
     width: 100%;
     border-bottom: #ccc 1px solid;
+}
+
+.inbox-item:first-child {
     border-top: #ccc 1px solid;
 }
 
@@ -224,6 +227,7 @@ input, select {
 
 .note-item-container {
     background-color:  #EEF1F5;
+    border-bottom: #BBC0C4 1px solid;
 }
 
 .note-item:first-of-type {
@@ -365,6 +369,10 @@ input, select {
   text-overflow: ellipsis;
 }
 
+.glyphicon-filter {
+color: #fff;
+}
+
 @media (max-width: 767px) {
     .inbox-nav div.col-xs-12 {
         -webkit-justify-content: center;
@@ -382,7 +390,7 @@ input, select {
         justify-content: center;
     }
 
-    .inbox-item div:first-child, .note-item div:first-child {
+    .inbox-item div.col-md-4, .note-item div.col-md-4 {
         margin-bottom: 20px;
     }
 }
