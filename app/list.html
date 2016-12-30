@@ -22,9 +22,9 @@
  
     <nav class="navbar navbar-pills">
 
-        <div class="container flex flex-center-vertical">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <div class="container">
+            <div class="navbar-header padding-top">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -38,8 +38,8 @@
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse flex flex-right" id="myNavbar">
-                <ul class="nav nav-pills navbar-right">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav nav-pills navbar-right">
                     <li role="presentation">
                         <a href="http://www.legicrawler.com/htdocs/aboutus.html">Legislative Reports</a>
                     </li>
@@ -49,7 +49,7 @@
                     <li role="presentation">
                         <a href="">Bill Lookup</a>
                     </li>
-                    <li role="presentation" class="dropdown">
+                    <li role="presentation" class="padding-top">
                         <input type="text" class="form-control search-box" placeholder="Key Word">
                         <img class="search-icon" src="./img/search-icon.png" />
                     </li>
@@ -61,33 +61,33 @@
 
 
     <div class="container-fluid hero dark small-hero">
-        <div class="container inbox-filter flex flex-center-vertical">
-            <div class="col-xs-8 no-padding">
+        <div class="container inbox-filter">
+            <div class="col-lg-9 col-sm-12 col-xs-12 no-padding">
                 <div>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myFilter">
                         <span class="glyphicon glyphicon-filter"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse" id="myFilter">
-                    <select>
+                <div class="collapse navbar-collapse no-padding" id="myFilter">
+                    <select class="float-left no-margin">
                         <option>Legislative Inbox</option>
                     </select>
-                    <ul class="list-day-select-container no-padding-left no-margin">
+                    <ul class="float-left list-day-select-container no-padding-left">
                         <li><button class="list-day-select first-child">Today</button></li>
                         <li><button class="list-day-select" style="width:90px;">This Week</button></li>
                         <li><button class="list-day-select">Enacted</button></li>
                         <li><button class="list-day-select last-child">After</button></li>
                     </ul>
-                    <input class="date-input" placeholder="dd/mm/yyyy"/>
-                    <select>
+                    <input class="date-input float-left" placeholder="dd/mm/yyyy"/>
+                    <select class="float-left">
                         <option>All States</option>
                     </select>
-                    <button class="btn-secondary button button-negative button-check"></button>
-                    <button class="btn-secondary button button-negative button-reset"></button>
+                    <button class="float-left btn-secondary button button-negative button-check"></button>
+                    <button class="float-left btn-secondary button button-negative button-reset"></button>
                 </div>
             </div>
 
-            <div class="col-xs-4 flex no-padding flex-right flex-center-vertical">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-4 no-padding filter-buttons">
                 <button class="button btn btn-primary margin-right">Legislative Map</button>
                 <button class="button btn btn-secondary button-negative">Hot Bills</button>
             </div>

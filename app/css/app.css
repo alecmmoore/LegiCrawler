@@ -176,6 +176,12 @@ input, select {
     display: flex;
 }
 
+.inbox-filter .list-day-select, 
+.inbox-filter .button-check, 
+.inbox-filter .button-reset {
+    height: 35px;
+}
+
 .list-day-select.first-child {
     border-bottom-left-radius: 7px;
     border-top-left-radius: 7px;
@@ -196,6 +202,10 @@ input, select {
 .inbox-nav div *:not(a) {
     height: 35px;
     margin: 0 5px;
+}
+
+.inbox-filter .float-left {
+    margin: 0 0 0 9px;
 }
 
 .inbox-nav div input {
@@ -373,6 +383,16 @@ input, select {
 color: #fff;
 }
 
+.filter-buttons {
+    text-align: right;
+}
+
+.inbox-filter .navbar-toggle{
+    border: none;
+    margin: 10px;
+    float: left;
+}
+
 @media (max-width: 767px) {
     .inbox-nav div.col-xs-12 {
         -webkit-justify-content: center;
@@ -392,6 +412,29 @@ color: #fff;
 
     .inbox-item div.col-md-4, .note-item div.col-md-4 {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 692) {
+    .search-icon {
+        right: 0;
+        left: 160px;
+    }
+
+    .search-box {
+        width: 174px;
+        margin-right: 10px; 
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .filter-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #myFilter{
+        text-align: center;
     }
 }
 
@@ -671,12 +714,16 @@ color: #fff;
 
 .search-icon {
     position: absolute;
-    top: 8px;
+    top: 18px;
     right: 6px;
 }
 
 .search-box {
     border-radius: 7px;
+}
+
+.padding-top {
+    padding-top: 10px;
 }
 
 .navbar img.search-icon {
