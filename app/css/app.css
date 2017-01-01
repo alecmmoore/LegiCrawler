@@ -204,8 +204,13 @@ input, select {
     margin: 0 5px;
 }
 
-.inbox-filter .float-left {
+.inbox-filter li.float-left {
+    list-style: none;
     margin: 0 0 0 9px;
+}
+
+.inbox-filter li.float-left:last-child {
+    margin: 0;
 }
 
 .inbox-nav div input {
@@ -301,11 +306,6 @@ input, select {
     height: 45px;
 }
 
-.abs-right {
-    position: absolute;
-    right: 30px;
-}
-
 .note-model-textarea {
     border: 1px #ccc solid;
     height: 400px;
@@ -332,6 +332,10 @@ input, select {
 
 .no-padding-left {
     padding-left: 0;
+}
+
+.inbox-filter .collapse.in {
+    display: inline-block;
 }
 
 .no-padding-right {
@@ -387,9 +391,13 @@ color: #fff;
     text-align: right;
 }
 
+.inbox-filter ul {
+        padding: 0;
+}
+
 .inbox-filter .navbar-toggle{
     border: none;
-    margin: 10px;
+    margin: 0 0 0 10px;
     float: left;
 }
 
@@ -421,6 +429,24 @@ color: #fff;
     .nav li img.search-icon {
         top: 8px;
     }
+
+    .filter-buttons {
+        position: absolute;
+        right: 30px;
+    }
+
+    .inbox-filter .navbar-collapse {
+        box-shadow: none;
+        border: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .inbox-filter li.float-left {
+        margin-bottom: 15px;
+        float: none;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 692px) {
@@ -438,12 +464,21 @@ color: #fff;
 @media (min-width: 767px) and (max-width: 1200px) {
     .filter-buttons {
         text-align: center;
-        margin-top: 20px;
     }
 
-    #myFilter{
-        text-align: center;
+    .inbox-filter li.float-left {
+        margin-left: 5px;
     }
+
+    .inbox-filter .navbar-collapse {
+        margin-bottom: 20px;
+    }
+
+    .inbox-filter {
+        padding: 0;
+    }
+
+
 }
 
 /* Button */

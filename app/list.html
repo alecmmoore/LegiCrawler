@@ -62,32 +62,45 @@
 
     <div class="container-fluid hero dark small-hero">
         <div class="container inbox-filter">
-            <div class="col-lg-9 col-sm-12 col-xs-12 no-padding">
+
+            <div class="col-lg-push-0 col-lg-8 col-md-10 col-md-push-1 col-xs-12 no-padding">
                 <div>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myFilter">
                         <span class="glyphicon glyphicon-filter"></span>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse no-padding" id="myFilter">
-                    <select class="float-left no-margin">
-                        <option>Legislative Inbox</option>
-                    </select>
-                    <ul class="float-left list-day-select-container no-padding-left">
-                        <li><button class="list-day-select first-child">Today</button></li>
-                        <li><button class="list-day-select" style="width:90px;">This Week</button></li>
-                        <li><button class="list-day-select">Enacted</button></li>
-                        <li><button class="list-day-select last-child">After</button></li>
+                    <ul>
+                        <li class="float-left">
+                            <select class="no-margin">
+                                <option>Legislative Inbox</option>
+                            </select>
+                        </li>
+                        <li class="float-left">
+                            <ul class="list-day-select-container no-padding-left">
+                                <li><button class="list-day-select first-child">Today</button></li>
+                                <li><button class="list-day-select" style="width:90px;">This Week</button></li>
+                                <li><button class="list-day-select">Enacted</button></li>
+                                <li><button class="list-day-select last-child">After</button></li>
+                            </ul>
+                        </li>
+                        <li class="float-left">
+                            <input class="date-input" placeholder="dd/mm/yyyy"/>
+                        </li>
+                        <li class="float-left">
+                            <select>
+                                <option>All States</option>
+                            </select>
+                        </li>
+                        <li class="float-left">
+                            <button class="float-left btn-secondary button button-negative button-check"></button>
+                            <button class="float-left btn-secondary button button-negative button-reset"></button>
+                        </li>
                     </ul>
-                    <input class="date-input float-left" placeholder="dd/mm/yyyy"/>
-                    <select class="float-left">
-                        <option>All States</option>
-                    </select>
-                    <button class="float-left btn-secondary button button-negative button-check"></button>
-                    <button class="float-left btn-secondary button button-negative button-reset"></button>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-4 no-padding filter-buttons">
+            <div class="col-lg-4 col-md-12 no-padding filter-buttons">
                 <button class="button btn btn-primary margin-right">Legislative Map</button>
                 <button class="button btn btn-secondary button-negative">Hot Bills</button>
             </div>
