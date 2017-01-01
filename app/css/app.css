@@ -227,7 +227,7 @@ input, select {
     border-top: #ccc 1px solid;
 }
 
-.note-item {
+.note-item .border-top {
     border-top: #BBC0C4 1px solid;
 }
 
@@ -413,17 +413,25 @@ color: #fff;
     .inbox-item div.col-md-4, .note-item div.col-md-4 {
         margin-bottom: 20px;
     }
+
+    .nav li.padding-top {
+        padding-top: 0;
+    }
+
+    .nav li img.search-icon {
+        top: 8px;
+    }
 }
 
-@media (max-width: 692) {
-    .search-icon {
+@media (max-width: 692px) {
+    .nav li img.search-icon {
         right: 0;
         left: 160px;
     }
 
-    .nav .search-box {
+    .nav li .search-box {
         width: 174px;
-        margin-right: 10px; 
+        margin-left: 10px; 
     }
 }
 
